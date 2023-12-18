@@ -5,7 +5,7 @@ const MyInfo = () => {
   return (
     <InfoBox>
         <MyInfoBox>
-          <img src="images/exImg.jpeg" width={210} height={230} />
+          <img src="images/exImg.jpeg" alt='프로필 이미지' width={210} height={230} />
           <div className="info_box">
             <div className="name_box">
               <div className="in_name_box">
@@ -20,6 +20,10 @@ const MyInfo = () => {
             <ConDiv>
               <p>GitHub.</p>
               <a href='https://github.com/springdream0406'>https://github.com/springdream0406</a>
+            </ConDiv>
+            <ConDiv>
+              <p>Blog.</p>
+              <a href='https://springdream0406.tistory.com'>https://springdream0406.tistory.com</a>
             </ConDiv>
           </div>
         </MyInfoBox>
