@@ -4,6 +4,7 @@ import Introduction from '../components/Introduce'
 import MyInfo from '../components/MyInfo'
 import Skill from '../components/Skill'
 import Experience from '../components/Experience'
+import Picture from '../components/Picture'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <DivLine />
       <Experience />
       <DivLine />
+      <Picture/>
       <h2 className='tytext'>Thank you!</h2>
     </HomeField>
   )

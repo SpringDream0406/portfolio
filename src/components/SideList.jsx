@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { BiMenu, BiArrowToRight } from "react-icons/bi";
 import styled from 'styled-components';
 
@@ -19,9 +19,9 @@ const SideList = ({ width = 280, children }) => {
   };
 
   return (
-    <SideListBox 
-      ref={side} 
-      width={`${width}px`} 
+    <SideListBox
+      ref={side}
+      width={`${width}px`}
       transform={`translatex(${-xPosition}px)`}>
       {isOpen
         ?
