@@ -27,7 +27,7 @@ const HomeField = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 60%;
   height: 100%;
   padding-top: 85px;
   padding-bottom: 85px;
