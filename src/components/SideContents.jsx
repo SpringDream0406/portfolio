@@ -1,18 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const SideContents = () => {
+
   return (
     <SideContentsBox>
-      <a href='/portfolio'>메인 페이지</a>
-      프로젝트
-      <a href='/farmfarm'><h5>팜팜</h5></a>
-
-      <a href='/farmfarm'>팜팜</a>
+      <a href='/farmfarm2'>2. 팜팜 서버 변경</a> <br />
+      <a href='/farmfarm'>1. 팜팜</a>
     </SideContentsBox>
-  )
-}
-
+  );
+};
 export default SideContents
 
 const SideContentsBox = styled.div`

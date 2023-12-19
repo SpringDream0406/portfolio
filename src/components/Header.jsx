@@ -8,9 +8,8 @@ import SideContents from './SideContents';
 const Header = () => {
   return (
     <HeaderArea>
-      {/* <a href='/'>{"<>🧑‍💻Dev Jun</>"}</a> */}
-      <a href='/portfolio'>🧑‍💻SpringDream 현재 아직 공사중입니다.. 👷‍♂️</a>
-      {/* <a href='/'>{"<🧑‍💻Dev Jun />"}</a> */}
+      <a href='/portfolio'>현재 아직 공사중입니다.. 👷‍♂️</a>
+      {/* <a href='/portfolio'>🧑‍💻SpringDream</a> */}
       <SideList width={298}>
         <SideContents />
       </SideList>
