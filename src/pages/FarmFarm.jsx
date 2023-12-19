@@ -1,15 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Senimo = () => {
+const FarmFarm = () => {
   return (
     <PjExplainField>
-      Senimo
+      FarmFarm
     </PjExplainField>
   )
 }
 
-export default Senimo
+export default FarmFarm
 
 const PjExplainField = styled.div`
   display: flex;

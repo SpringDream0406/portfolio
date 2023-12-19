@@ -4,8 +4,11 @@ import styled from 'styled-components'
 const SideContents = () => {
   return (
     <SideContentsBox>
-      <a href='/tm'>TravelMate</a>
-      <a href='/senimo'>Senimo</a>
+      <a href='/portfolio'>메인 페이지</a>
+      프로젝트
+      <a href='/farmfarm'><h5>팜팜</h5></a>
+
+      <a href='/farmfarm'>팜팜</a>
     </SideContentsBox>
   )
 }

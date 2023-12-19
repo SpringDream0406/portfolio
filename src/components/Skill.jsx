@@ -13,7 +13,7 @@ const Skill = () => {
         <hr />
         <div>
           <span>Back-End</span>
-          <li>Node.js, Express, Flask</li>
+          <li>Node.js, Flask</li>
         </div>
         <hr />
         <div>
