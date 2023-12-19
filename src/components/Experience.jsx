@@ -9,12 +9,17 @@ const Experience = () => {
         <li>광주 인공지능사관학교</li>
         <span>- 기간 : 2023.06 ~ 2023.12</span>
         <span>- 과정 : App과정</span>
+        <br/>
+        <li>조선대학교 전자공학과</li>
+        <span>- 기간 : 2007.03 ~ 2013.02</span>
+        <span>- 학점 : 4.08 / 4.5</span>
       </EduBox>
       <DivLine />
       <ExTitleWrap>Experience</ExTitleWrap>
       <ExBox>
         <li className='pjType'>Team Project</li>
-        <a href='/tm'>1. TravelMate</a>
+        <br/>
+        {/* <a href='/tm'>1. TravelMate</a>
         <span className='pjExplain'>- 성향·리뷰기반 동행자 추천 및 매칭 플랫폼</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
@@ -44,7 +49,7 @@ const Experience = () => {
             <li>채팅 및 리뷰 기능</li>
             <li>동행온도</li>
           </div>
-        </ProjectBox>
+        </ProjectBox> */}
 
         {/* <a href='https://hellosori.notion.site/4dd1ce5f2f684bf9adf2cb49d631c81b'>1. 팜팜</a> */}
         <a href='https://hellosori.notion.site/4dd1ce5f2f684bf9adf2cb49d631c81b' target='_blank' rel='noopener noreferrer'>1. 팜팜</a>
@@ -79,6 +84,8 @@ const Experience = () => {
           <div className='pjContent'>
             <li>
               서버와 DB를 배우지 않은 상태  <br />
+        <span>- 학점 : 4.08 / 4.5</span>
+
               서버와 DB를 배우지 않은 상태에서 프로젝트를 진행하다보니 많은 문제가 있었습니다. <br />
               우선 선생님들께 서버와 DB의 이론적인 내용 등을 여쭤 이론적인 지식을 쌓고, <br />
               인터넷과 GPT를 활용하여 React와 Flask의 동작 코드를 확인 후 이를 활용하여 Flask를 이용한 API 서버를 구축했으며, <br />

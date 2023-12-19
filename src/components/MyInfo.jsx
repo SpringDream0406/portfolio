@@ -19,11 +19,11 @@ const MyInfo = () => {
             </ConDiv>
             <ConDiv>
               <p>GitHub.</p>
-              <a href='https://github.com/springdream0406'>https://github.com/springdream0406</a>
+              <a href='https://github.com/springdream0406' target='_blank' rel='noopener noreferrer'>https://github.com/springdream0406</a>
             </ConDiv>
             <ConDiv>
               <p>Blog.</p>
-              <a href='https://springdream0406.tistory.com'>https://springdream0406.tistory.com</a>
+              <a href='https://springdream0406.tistory.com' target='_blank' rel='noopener noreferrer'>https://springdream0406.tistory.com</a>
             </ConDiv>
           </div>
         </MyInfoBox>

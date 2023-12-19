@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import Introduction from './Introduce'
-import MyInfo from './MyInfo'
-import Skill from './Skill'
-import Experience from './Experience'
+import Introduction from '../components/Introduce'
+import MyInfo from '../components/MyInfo'
+import Skill from '../components/Skill'
+import Experience from '../components/Experience'
 
 const Home = () => {
   return (
