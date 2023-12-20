@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const SideContents = () => {
 
   return (
     <SideContentsBox>
-      <a href='/farmfarm2'>2. 팜팜 서버 변경</a> <br />
-      <a href='/farmfarm'>1. 팜팜</a>
+      <Link to='/farmfarm2'>2. 팜팜 서버 변경</Link> <br />
+      <Link to='/farmfarm'>1. 팜팜</Link>
     </SideContentsBox>
   );
 };

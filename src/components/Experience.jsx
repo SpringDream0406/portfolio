@@ -23,7 +23,7 @@ const Experience = () => {
       <ExTitleWrap>Experience</ExTitleWrap>
       <ExBox>
 
-        <Link to='/kekeke'>3. 케이크 추천 서비스 수정필요 </Link>
+      <Link to='/kekeke'>4. 케이크 추천 서비스 수정필요 </Link>
         <span className='pjExplain'>- 광인사 2차 프로젝트 당시 옆 팀의 서버 초기 설정과 로그인 기능 구현</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
@@ -47,8 +47,37 @@ const Experience = () => {
             <li>Node 서버의 초기 설정</li>
             <li>구매자와 판매자의 회원가입과 로그인 관련 API 구축</li>
             <li>케이크 둘러보기 페이지 API 구축</li>
+          </div>
+        </ProjectBox>
 
+        <br />
+        <br />
+        <br />
 
+        <Link to='/kekeke'>3. 음악 추천 서비스 수정 필요</Link>
+        <span className='pjExplain'>- 광인사 2차 프로젝트 당시 옆 팀의 서버 초기 설정과 로그인 기능 구현</span>
+        <ProjectBox>
+          <span className='pjTitle'>프로젝트 기간</span>
+          <span className='pjContent'>2023.11.09 ~ 2023.11.21</span>
+        </ProjectBox>
+        <hr />
+        <ProjectBox>
+          <span className='pjTitle'>프로젝트 종류</span>
+          <span className='pjContent'>팀 프로젝트 (5명)</span>
+        </ProjectBox>
+        <hr />
+        <ProjectBox>
+          <span className='pjTitle'>사용 기술</span>
+          <span className='pjContent'>React / Node.js / Flask / MySQL / Github / Figma</span>
+        </ProjectBox>
+        <hr />
+        <ProjectBox>
+          <span className='pjTitle'>담당 역할</span>
+          <div className='pjContent'>
+            <li>광인사 2차 프로젝트 도중 옆 팀의 서버 관련 도움 역할로 참여</li>
+            <li>Node 서버의 초기 설정</li>
+            <li>구매자와 판매자의 회원가입과 로그인 관련 API 구축</li>
+            <li>케이크 둘러보기 페이지 API 구축</li>
           </div>
         </ProjectBox>
 
