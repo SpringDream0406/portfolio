@@ -17,7 +17,7 @@ const Picture = () => {
     };
 
 
-    const context = require.context('../../public', false, /\.(png|jpe?g|svg)$/);
+    const context = require.context('../../public/images/pictures', false, /\.(png|jpe?g|svg)$/);
     const imageFiles = context.keys().map((key) => key.replace('./', ''));
 
     return (
