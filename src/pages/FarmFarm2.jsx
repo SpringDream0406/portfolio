@@ -41,6 +41,17 @@ const FarmFarm2 = () => {
         <PjExplainField>
             <ExBox>
 
+            <Slider {...settings}>
+                    {imageFiles.map((image, index) => (
+                        <div key={index}>
+                            {/* <img src={`images/pictures/${image}`} alt={`사진 ${index + 1}`} style={{ width: '100%', height: 'auto' }} /> */}
+                            <img src={`${publicUrl}/images/farmfarm2/${image}`} alt={`${image}`} style={{ width: '100%', height: 'auto' }} />
+                        </div>
+                    ))}
+                </Slider>
+                <br />
+                <br />
+
                 <Title href='#' onClick={goBack}>2. 팜팜 서버 교체</Title>
 
                 <span className='pjExplain'>- node 서버를 배운 후, 광인사 1차 프로젝트 였던 팜팜의 서버를 node로 교체</span>
@@ -79,16 +90,7 @@ const FarmFarm2 = () => {
                 <hr />
 
                 <br />
-                <Slider {...settings}>
-                    {imageFiles.map((image, index) => (
-                        <div key={index}>
-                            {/* <img src={`images/pictures/${image}`} alt={`사진 ${index + 1}`} style={{ width: '100%', height: 'auto' }} /> */}
-                            <img src={`${publicUrl}/images/farmfarm2/${image}`} alt={`${image}`} style={{ width: '100%', height: 'auto' }} />
-                        </div>
-                    ))}
-                </Slider>
-                <br />
-                <hr />
+                
 
                 <ProjectBox>
                     <span className='pjTitle'>GitHub</span>
@@ -108,7 +110,7 @@ const Title = styled.a`
   text-decoration: none;
   color: orange;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 5px;
   transition: color 0.3s;
 

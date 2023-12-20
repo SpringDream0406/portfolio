@@ -1,5 +1,10 @@
 import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components'
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 const Sebs = () => {
 
@@ -7,11 +12,50 @@ const Sebs = () => {
     window.scrollTo(0, 0);
   }, []);
 
+
+  const nav = useNavigate();
+
+  const goBack = () => {
+    nav(-1);
+  }
+
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '0',
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
+
+
+  const context = require.context('../../public/images/sebs', false, /\.(png|jpe?g|svg)$/);
+  const imageFiles = context.keys().map((key) => key.replace('./', ''));
+
+  const publicUrl = process.env.PUBLIC_URL;
+
   return (
     <PjExplainField>
       <ExBox>
 
-        <h2 style={{ color: '#079707' }} >3. SEB'S MUSIC</h2>
+        <Slider {...settings}>
+          {imageFiles.map((image, index) => (
+            <div key={index}>
+              {/* <img src={`images/pictures/${image}`} alt={`사진 ${index + 1}`} style={{ width: '100%', height: 'auto' }} /> */}
+              <img src={`${publicUrl}/images/sebs/${image}`} alt={`${image}`} style={{ width: '100%', height: 'auto' }} />
+            </div>
+          ))}
+        </Slider>
+
+        <br />
+        <br />
+
+        <Title href='#' onClick={goBack}>23. SEB'S MUSIC</Title>
+
         <span className='pjExplain'>- AI기반 음악 추천 스트리밍 서비스 (광인사 2차 프로젝트)</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
@@ -31,10 +75,8 @@ const Sebs = () => {
         <ProjectBox>
           <span className='pjTitle'>담당 역할</span>
           <div className='pjContent'>
-            <li>광인사 2차 프로젝트 도중 옆 팀의 서버 관련 도움 역할로 참여</li>
-            <li>Node 서버의 초기 설정</li>
-            <li>구매자와 판매자의 회원가입과 로그인 관련 API 구축</li>
-            <li>케이크 둘러보기 페이지 API 구축</li>
+            <li>Node를 이용한 API 서버 개발/관리</li>
+            <li>MySQL을 이용한 데이터베이스 구축/관리</li>
           </div>
         </ProjectBox>
         <hr />
@@ -42,9 +84,24 @@ const Sebs = () => {
           <h4>회고</h4>
           2차 프로젝트 중 친분 있는 팀이 서버에 대한 어려움을 겪고 있어서 여러 이유로 도움을 주게 되었습니다. <br />
           <br />
-          
+
         </Recall>
         <hr />
+
+        <Recall>
+          <h4>시연 영상</h4>
+          <div style={{ textAlign: 'center' }}>
+            <iframe
+              width="70%"
+              height="400"
+              src="https://www.youtube.com/embed/A3frdYgd-ho"
+              title="SEB'S MUSIC 시연 영상"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </Recall>
+
         <ProjectBox>
           <span className='pjTitle'>GitHub</span>
           <div className='pjContent'>
@@ -59,6 +116,20 @@ const Sebs = () => {
 
 export default Sebs
 
+
+const Title = styled.a`
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+
+  &:hover {
+    text-decoration: underline;
+    color: red;
+  }
+`;
 
 
 const Recall = styled.span`

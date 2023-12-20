@@ -9,7 +9,7 @@ import styled from 'styled-components'
 const Header = () => {
   return (
     <HeaderArea>
-      <a href='/portfolio'>현재 아직 공사중입니다.. 👷‍♂️</a>
+      <a href='/portfolio'>현재 아직 공사중입니다.. 👷‍♂️ dated 2023.12.20. 23:26</a>
       {/* <a href='/portfolio'>🧑‍💻SpringDream</a> */}
       {/* <SideList width={298}>
         <SideContents />

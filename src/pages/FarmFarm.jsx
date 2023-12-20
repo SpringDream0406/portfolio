@@ -75,7 +75,7 @@ const FarmFarm = () => {
         <hr />
 
         <ProjectBox>
-          <span className='pjTitle'>프로젝트 설명</span>
+          <span className='pjTitle'>자세한 프로젝트 설명</span>
           <div className='pjContent'>
             <a className='pjContent' href='https://hellosori.notion.site/4dd1ce5f2f684bf9adf2cb49d631c81b' target='_blank' rel='noopener noreferrer'>[팜팜] 텃밭 분양 플랫폼 </a>
           </div>
@@ -126,7 +126,7 @@ const Title = styled.a`
   text-decoration: none;
   color: orange;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 5px;
   transition: color 0.3s;
 
