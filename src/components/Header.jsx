@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import SideList from './SideList';
-import SideContents from './SideContents';
+// import SideList from './SideList';
+// import SideContents from './SideContents';
+// import { Link } from 'react-router-dom';
 
 
 
@@ -10,9 +11,9 @@ const Header = () => {
     <HeaderArea>
       <a href='/portfolio'>현재 아직 공사중입니다.. 👷‍♂️</a>
       {/* <a href='/portfolio'>🧑‍💻SpringDream</a> */}
-      <SideList width={298}>
+      {/* <SideList width={298}>
         <SideContents />
-      </SideList>
+      </SideList> */}
     </HeaderArea>
   )
 }

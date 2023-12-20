@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components'
+
 
 const FarmFarm = () => {
 
@@ -7,13 +9,19 @@ const FarmFarm = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const nav = useNavigate();
+
+  const goBack = () => {
+    nav(-1);
+  }
+
+
   return (
     <PjExplainField>
       <ExBox>
 
-        <h2 style={{ color: '#079707' }} >1. 팜팜</h2>
 
-        {/* <a href='https://hellosori.notion.site/4dd1ce5f2f684bf9adf2cb49d631c81b' target='_blank' rel='noopener noreferrer'>1. 팜팜</a> */}
+        <Title href='#' onClick={goBack}>1. 팜팜</Title>
 
         <span className='pjExplain'>- 도심 농부를 위한 텃밭 분양 플랫폼 (광인사 1차 프로젝트)</span>
         <ProjectBox>
@@ -21,16 +29,19 @@ const FarmFarm = () => {
           <span className='pjContent'>2023.07.26 ~ 2023.08.18</span>
         </ProjectBox>
         <hr />
+
         <ProjectBox>
           <span className='pjTitle'>프로젝트 종류</span>
           <span className='pjContent'>팀 프로젝트 (5명)</span>
         </ProjectBox>
         <hr />
+
         <ProjectBox>
           <span className='pjTitle'>사용 기술</span>
           <span className='pjContent'>React / Flask / Oracle / Github / Notion</span>
         </ProjectBox>
         <hr />
+
         <ProjectBox>
           <span className='pjTitle'>담당 역할</span>
           <div className='pjContent'>
@@ -40,6 +51,7 @@ const FarmFarm = () => {
           </div>
         </ProjectBox>
         <hr />
+
         <Recall>
           <h4>회고</h4>
           첫 프로젝트였던 만큼 많은 문제와 실제 개발을 경험해 볼 수 있는 프로젝트였습니다. <br />
@@ -61,11 +73,43 @@ const FarmFarm = () => {
           <br />
         </Recall>
         <hr />
+
+        <ProjectBox>
+          <span className='pjTitle'>프로젝트 설명</span>
+          <div className='pjContent'>
+            <a className='pjContent' href='https://hellosori.notion.site/4dd1ce5f2f684bf9adf2cb49d631c81b' target='_blank' rel='noopener noreferrer'>[팜팜] 텃밭 분양 플랫폼 </a>
+          </div>
+        </ProjectBox>
+        <hr />
+
+        <Recall>
+          <h4>시연 영상</h4>
+          <div style={{ textAlign: 'center' }}>
+            <iframe
+              width="50%"
+              height="315"
+              src="https://www.youtube.com/embed/2ZGiNXSUUps"
+              title="핵심 기능 시연 영상 (1min)"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+            <iframe
+              width="50%"
+              height="315"
+              src="https://www.youtube.com/embed/HNtmMcy6rKk"
+              title="전체 페이지 시연 영상 (5min)"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </Recall>
+
+        <hr />
+
         <ProjectBox>
           <span className='pjTitle'>GitHub</span>
           <div className='pjContent'>
-            <a className='pjContent' href='https://github.com/SpringDream0406/-GAI-project_Appian' target='_blank' rel='noopener noreferrer'>https://github.com/SpringDream0406/-GAI-project_Appian</a>
-
+            <a className='pjContent' href='https://github.com/SpringDream0406/-GAI-project_Appian' target='_blank' rel='noopener noreferrer'>팜팜 프로젝트 GitHub</a>
           </div>
         </ProjectBox>
       </ExBox>
@@ -75,6 +119,22 @@ const FarmFarm = () => {
 }
 
 export default FarmFarm
+
+
+
+const Title = styled.a`
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+
+  &:hover {
+    text-decoration: underline;
+    color: red;
+  }
+`;
 
 const Recall = styled.span`
   padding-left: 10px;

@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { useNavigate } from 'react-router-dom';
 
 const FarmFarm2 = () => {
 
@@ -7,11 +11,37 @@ const FarmFarm2 = () => {
         window.scrollTo(0, 0);
     }, []);
 
+
+    const nav = useNavigate();
+
+    const goBack = () => {
+        nav(-1);
+    }
+
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 1500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '0',
+        autoplay: true,
+        autoplaySpeed: 2500,
+    };
+
+
+    const context = require.context('../../public/images/farmfarm2', false, /\.(png|jpe?g|svg)$/);
+    const imageFiles = context.keys().map((key) => key.replace('./', ''));
+
+    const publicUrl = process.env.PUBLIC_URL;
+
     return (
         <PjExplainField>
             <ExBox>
 
-                <h2 style={{ color: '#079707' }} >2. 팜팜 서버 교체</h2>
+                <Title href='#' onClick={goBack}>2. 팜팜 서버 교체</Title>
 
                 <span className='pjExplain'>- node 서버를 배운 후, 광인사 1차 프로젝트 였던 팜팜의 서버를 node로 교체</span>
                 <ProjectBox>
@@ -32,7 +62,7 @@ const FarmFarm2 = () => {
                 <ProjectBox>
                     <span className='pjTitle'>담당 역할</span>
                     <div className='pjContent'>
-                        <li>Flask로 개발한 API 서버를 Node.js로 교체</li>
+                        <span>Flask로 개발한 API 서버를 Node.js로 교체</span>
                     </div>
                 </ProjectBox>
                 <hr />
@@ -47,11 +77,23 @@ const FarmFarm2 = () => {
 
                 </Recall>
                 <hr />
+
+                <br />
+                <Slider {...settings}>
+                    {imageFiles.map((image, index) => (
+                        <div key={index}>
+                            {/* <img src={`images/pictures/${image}`} alt={`사진 ${index + 1}`} style={{ width: '100%', height: 'auto' }} /> */}
+                            <img src={`${publicUrl}/images/farmfarm2/${image}`} alt={`${image}`} style={{ width: '100%', height: 'auto' }} />
+                        </div>
+                    ))}
+                </Slider>
+                <br />
+                <hr />
+
                 <ProjectBox>
                     <span className='pjTitle'>GitHub</span>
                     <div className='pjContent'>
-                        <a className='pjContent' href='https://github.com/SpringDream0406/-GAI-project_Appian' target='_blank' rel='noopener noreferrer'>https://github.com/SpringDream0406/-GAI-project_Appian</a>
-
+                        <a className='pjContent' href='https://github.com/SpringDream0406/-GAI-project_Appian' target='_blank' rel='noopener noreferrer'>팜팜 프로젝트 GitHub</a>
                     </div>
                 </ProjectBox>
             </ExBox>
@@ -61,6 +103,20 @@ const FarmFarm2 = () => {
 
 export default FarmFarm2
 
+
+const Title = styled.a`
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+
+  &:hover {
+    text-decoration: underline;
+    color: red;
+  }
+`;
 
 
 const Recall = styled.span`

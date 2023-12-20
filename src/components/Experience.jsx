@@ -23,7 +23,7 @@ const Experience = () => {
       <ExTitleWrap>Experience</ExTitleWrap>
       <ExBox>
 
-      <Link to='/kekeke'>4. 케이크 추천 서비스 수정필요 </Link>
+        <Link to='/kekeke'>4. 케이크 추천 서비스 수정필요 </Link>
         <span className='pjExplain'>- 광인사 2차 프로젝트 당시 옆 팀의 서버 초기 설정과 로그인 기능 구현</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
@@ -54,8 +54,8 @@ const Experience = () => {
         <br />
         <br />
 
-        <Link to='/kekeke'>3. 음악 추천 서비스 수정 필요</Link>
-        <span className='pjExplain'>- 광인사 2차 프로젝트 당시 옆 팀의 서버 초기 설정과 로그인 기능 구현</span>
+        <Link to='/sebs'>3. SEB'S MUSIC</Link>
+        <span className='pjExplain'>- AI기반 음악 추천 스트리밍 서비스 (광인사 2차 프로젝트)</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
           <span className='pjContent'>2023.11.09 ~ 2023.11.21</span>
@@ -63,21 +63,19 @@ const Experience = () => {
         <hr />
         <ProjectBox>
           <span className='pjTitle'>프로젝트 종류</span>
-          <span className='pjContent'>팀 프로젝트 (5명)</span>
+          <span className='pjContent'>팀 프로젝트 (4명)</span>
         </ProjectBox>
         <hr />
         <ProjectBox>
           <span className='pjTitle'>사용 기술</span>
-          <span className='pjContent'>React / Node.js / Flask / MySQL / Github / Figma</span>
+          <span className='pjContent'>Flutter / Node.js / Flask / MySQL / Github</span>
         </ProjectBox>
         <hr />
         <ProjectBox>
           <span className='pjTitle'>담당 역할</span>
           <div className='pjContent'>
-            <li>광인사 2차 프로젝트 도중 옆 팀의 서버 관련 도움 역할로 참여</li>
-            <li>Node 서버의 초기 설정</li>
-            <li>구매자와 판매자의 회원가입과 로그인 관련 API 구축</li>
-            <li>케이크 둘러보기 페이지 API 구축</li>
+            <li>Node를 이용한 API 서버 개발/관리</li>
+            <li>MySQL을 이용한 데이터베이스 구축/관리</li>
           </div>
         </ProjectBox>
 
@@ -85,7 +83,7 @@ const Experience = () => {
         <br />
         <br />
 
-        <Link to ='/farmfarm2'>2. 팜팜 서버 교체</Link>
+        <Link to='/farmfarm2'>2. 팜팜 서버 교체</Link>
         <span className='pjExplain'>- node 서버를 배운 후, 광인사 1차 프로젝트 였던 팜팜의 서버를 node로 교체</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
@@ -112,7 +110,7 @@ const Experience = () => {
         <br />
         <br />
 
-        <Link to ='/farmfarm'>1. 팜팜</Link>
+        <Link to='/farmfarm'>1. 팜팜</Link>
         {/* <a href='farmfarm'>1. 팜팜</a> */}
         {/* <a href='https://hellosori.notion.site/4dd1ce5f2f684bf9adf2cb49d631c81b' target='_blank' rel='noopener noreferrer'>1. 팜팜</a> */}
 
@@ -136,7 +134,7 @@ const Experience = () => {
           <span className='pjTitle'>담당 역할</span>
           <div className='pjContent'>
             <li>머신러닝을 이용한 농산물 가격 예측 모델 개발</li>
-            <li>Flask를 이용한 API 서버 개발</li>
+            <li>Flask를 이용한 API 서버 개발/관리</li>
             <li>Oracle를 이용한 데이터베이스 구축/관리</li>
           </div>
         </ProjectBox>
@@ -168,7 +166,7 @@ const ExBox = styled.div`
 
   a {
     color: #079707;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bold;
     margin: 15px 0;
     text-decoration: none;
