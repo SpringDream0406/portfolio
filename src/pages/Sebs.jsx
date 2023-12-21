@@ -1,56 +1,26 @@
-import React, { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom';
+import React from 'react'
 import styled from 'styled-components'
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import ImageSlider from '../components/ImageSlider';
+import { useScrollToTop, useCustomNavigate } from '../components/Utils';
+
 
 
 const Sebs = () => {
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useScrollToTop();
 
+  const { goBack } = useCustomNavigate();
 
-  const nav = useNavigate();
-
-  const goBack = () => {
-    nav(-1);
-  }
-
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 1500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: '0',
-    autoplay: true,
-    autoplaySpeed: 2000,
-  };
-
-
+  const imageForderName = 'sebs';
   const context = require.context('../../public/images/sebs', false, /\.(png|jpe?g|svg)$/);
   const imageFiles = context.keys().map((key) => key.replace('./', ''));
-
-  const publicUrl = process.env.PUBLIC_URL;
 
   return (
     <PjExplainField>
       <ExBox>
 
-        <Slider {...settings}>
-          {imageFiles.map((image, index) => (
-            <div key={index}>
-              {/* <img src={`images/pictures/${image}`} alt={`사진 ${index + 1}`} style={{ width: '100%', height: 'auto' }} /> */}
-              <img src={`${publicUrl}/images/sebs/${image}`} alt={`${image}`} style={{ width: '100%', height: 'auto' }} />
-            </div>
-          ))}
-        </Slider>
-
+        <ImageSlider imageForderName={imageForderName} imageFiles={imageFiles}/>
+        <br />
         <br />
         <br />
 

@@ -1,29 +1,34 @@
-import React, { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom';
+import React from 'react'
 import styled from 'styled-components'
+import ImageSlider from '../components/ImageSlider';
+import { useScrollToTop, useCustomNavigate } from '../components/Utils';
+
 
 
 const FarmFarm = () => {
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useScrollToTop();
 
-  const nav = useNavigate();
+  const { goBack } = useCustomNavigate();
 
-  const goBack = () => {
-    nav(-1);
-  }
+  const imageForderName = 'farmfarm';
+  const context = require.context(`../../public/images/farmfarm`, false, /\.(png|jpe?g|svg)$/);
+  const imageFiles = context.keys().map((key) => key.replace('./', ''));
+
 
 
   return (
     <PjExplainField>
       <ExBox>
 
+        <ImageSlider imageForderName={imageForderName} imageFiles={imageFiles} />
+        <br />
+        <br />
+        <br />
 
         <Title href='#' onClick={goBack}>1. 팜팜</Title>
 
-        <span className='pjExplain'>- 도심 농부를 위한 텃밭 분양 플랫폼 (광인사 1차 프로젝트)</span>
+        <span className='pjExplain'>- 도심농부를 위한 텃밭 분양 플랫폼 (광인사 1차 프로젝트)</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
           <span className='pjContent'>2023.07.26 ~ 2023.08.18</span>

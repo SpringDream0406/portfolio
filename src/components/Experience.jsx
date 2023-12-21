@@ -23,8 +23,8 @@ const Experience = () => {
       <ExTitleWrap>Experience</ExTitleWrap>
       <ExBox>
 
-        <Link to='/kekeke'>4. 케이크 추천 서비스 수정필요 </Link>
-        <span className='pjExplain'>- 광인사 2차 프로젝트 당시 옆 팀의 서버 초기 설정과 로그인 기능 구현</span>
+        <Link to='/kekeke'>4. KEKEKE </Link>
+        <span className='pjExplain'>- AI 추천 및 드로잉 기술을 이용한 주문 케이크 플랫폼</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
           <span className='pjContent'>2023.11.09 ~ 2023.11.21</span>
@@ -37,7 +37,7 @@ const Experience = () => {
         <hr />
         <ProjectBox>
           <span className='pjTitle'>사용 기술</span>
-          <span className='pjContent'>React / Node.js / Flask / MySQL / Github / Figma</span>
+          <span className='pjContent'>React / Node.js / Flask / MySQL / Github / Notion / Figma</span>
         </ProjectBox>
         <hr />
         <ProjectBox>
@@ -114,7 +114,7 @@ const Experience = () => {
         {/* <a href='farmfarm'>1. 팜팜</a> */}
         {/* <a href='https://hellosori.notion.site/4dd1ce5f2f684bf9adf2cb49d631c81b' target='_blank' rel='noopener noreferrer'>1. 팜팜</a> */}
 
-        <span className='pjExplain'>- 도심 농부를 위한 텃밭 분양 플랫폼 (광인사 1차 프로젝트)</span>
+        <span className='pjExplain'>- 도심농부를 위한 텃밭 분양 플랫폼 (광인사 1차 프로젝트)</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
           <span className='pjContent'>2023.07.26 ~ 2023.08.18</span>
@@ -166,7 +166,7 @@ const ExBox = styled.div`
 
   a {
     color: #079707;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     margin: 15px 0;
     text-decoration: none;

@@ -1,19 +1,32 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
+import ImageSlider from '../components/ImageSlider';
+import { useScrollToTop, useCustomNavigate } from '../components/Utils';
+
 
 const Kekeke = () => {
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useScrollToTop();
+
+  const { goBack } = useCustomNavigate();
+
+  const imageForderName = 'kekeke';
+  const context = require.context('../../public/images/kekeke', false, /\.(png|jpe?g|svg)$/);
+  const imageFiles = context.keys().map((key) => key.replace('./', ''));
+
 
   return (
     <PjExplainField>
       <ExBox>
 
-        <h2 style={{ color: '#079707' }} >3. 케이크 추천 서비스</h2>
+        <ImageSlider imageForderName={imageForderName} imageFiles={imageFiles} />
+        <br />
+        <br />
+        <br />
 
-        <span className='pjExplain'>- 광인사 2차 프로젝트 당시 옆 팀의 서버 초기 설정과 로그인 기능 구현</span>
+        <Title href='#' onClick={goBack}>4. KEKEKE</Title>
+
+        <span className='pjExplain'>- AI 추천 및 드로잉 기술을 이용한 주문 케이크 플랫폼</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
           <span className='pjContent'>2023.11.01 ~ 2023.12.05</span>
@@ -26,7 +39,7 @@ const Kekeke = () => {
         <hr />
         <ProjectBox>
           <span className='pjTitle'>사용 기술</span>
-          <span className='pjContent'>React / Node.js / Flask / MySQL / Github / Figma</span>
+          <span className='pjContent'>React / Node.js / Flask / MySQL / Github / Notion / Figma</span>
         </ProjectBox>
         <hr />
         <ProjectBox>
@@ -72,6 +85,22 @@ const Kekeke = () => {
 
 export default Kekeke
 
+
+
+
+const Title = styled.a`
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+
+  &:hover {
+    text-decoration: underline;
+    color: red;
+  }
+`;
 
 
 const Recall = styled.span`

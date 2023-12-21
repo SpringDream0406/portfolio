@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 const Picture = () => {
 
@@ -25,7 +25,6 @@ const Picture = () => {
     const publicUrl = process.env.PUBLIC_URL;
 
     return (
-        <PjExplainField>
             <Slider {...settings}>
                 {imageFiles.map((image, index) => (
                     <div key={index}>
@@ -35,7 +34,6 @@ const Picture = () => {
                     </div>
                 ))}
             </Slider>
-        </PjExplainField>
 
     );
 };
@@ -43,16 +41,16 @@ const Picture = () => {
 export default Picture;
 
 
-const PjExplainField = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding-top: 20px;
-  padding-bottom: 85px;
-  margin: auto;
-  @media screen and (max-width: 1024px){
-    width: 80%;
-  }
-`
+// const PjExplainField = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   width: 100%;
+//   height: 100%;
+//   padding-top: 20px;
+//   padding-bottom: 85px;
+//   margin: auto;
+//   @media screen and (max-width: 1024px){
+//     width: 80%;
+//   }
+// `
