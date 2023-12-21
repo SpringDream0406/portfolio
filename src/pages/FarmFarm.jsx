@@ -88,21 +88,23 @@ const FarmFarm = () => {
         <hr />
 
         <Recall>
-          <h4>시연 영상</h4>
+          <h4>영상</h4>
           <div style={{ textAlign: 'center' }}>
             <iframe
-              width="50%"
-              height="315"
+              width="100%"
+              height="400"
               src="https://www.youtube.com/embed/2ZGiNXSUUps"
-              title="핵심 기능 시연 영상 (1min)"
+              title="핵심 기능 영상 (1min)"
               frameBorder="0"
               allowFullScreen
             ></iframe>
+            <br />
+            <br />
             <iframe
-              width="50%"
-              height="315"
+              width="100%"
+              height="400"
               src="https://www.youtube.com/embed/HNtmMcy6rKk"
-              title="전체 페이지 시연 영상 (5min)"
+              title="전체 페이지 영상 (5min)"
               frameBorder="0"
               allowFullScreen
             ></iframe>

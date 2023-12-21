@@ -5,6 +5,8 @@ import MyInfo from '../components/MyInfo'
 import Skill from '../components/Skill'
 import Experience from '../components/Experience'
 import Picture from '../components/Picture'
+import Certification from '../components/Certification'
+import Education from '../components/Education'
 
 const Home = () => {
   return (
@@ -15,9 +17,13 @@ const Home = () => {
       <DivLine />
       <Skill />
       <DivLine />
+      <Certification />
+      <DivLine />
+      <Education />
+      <DivLine />
       <Experience />
       <DivLine />
-      <Picture/>
+      <Picture />
       <h2 className='tytext'>Thank you!</h2>
     </HomeField>
   )
@@ -29,7 +35,7 @@ const HomeField = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 55%;
+  width: 50%;
   height: 100%;
   padding-top: 85px;
   padding-bottom: 85px;

@@ -71,6 +71,23 @@ const Kekeke = () => {
 
         </Recall>
         <hr />
+
+        <Recall>
+          <h4>영상</h4>
+          <div style={{ textAlign: 'center' }}>
+            <iframe
+              width="100%"
+              height="400"
+              src="https://www.youtube.com/embed/A5MbFHJaqCA"
+              title="KEKEKE 영상"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </Recall>
+        <hr />
+
+
         <ProjectBox>
           <span className='pjTitle'>GitHub</span>
           <div className='pjContent'>

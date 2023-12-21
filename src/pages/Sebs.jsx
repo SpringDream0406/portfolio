@@ -59,13 +59,13 @@ const Sebs = () => {
         <hr />
 
         <Recall>
-          <h4>시연 영상</h4>
+          <h4>영상</h4>
           <div style={{ textAlign: 'center' }}>
             <iframe
-              width="70%"
+              width="100%"
               height="400"
               src="https://www.youtube.com/embed/A3frdYgd-ho"
-              title="SEB'S MUSIC 시연 영상"
+              title="SEB'S MUSIC 영상"
               frameBorder="0"
               allowFullScreen
             ></iframe>

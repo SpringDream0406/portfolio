@@ -6,20 +6,6 @@ import styled from 'styled-components'
 const Experience = () => {
   return (
     <>
-      <ExTitleWrap>Education</ExTitleWrap>
-      <EduBox>
-        <li>광주 인공지능사관학교</li>
-        <span>- 기간 : 2023.06 ~ 2023.12</span>
-        <span>- 과정 : App과정</span>
-        <br />
-        <li>조선대학교 전자공학과</li>
-        <span>- 기간 : 2007.03 ~ 2013.02</span>
-        <span>- 학점 : 4.08 / 4.5</span>
-      </EduBox>
-
-
-
-      <DivLine />
       <ExTitleWrap>Experience</ExTitleWrap>
       <ExBox>
 
@@ -186,21 +172,6 @@ const ExBox = styled.div`
   }
 `
 
-const EduBox = styled(ExBox)`
-  display: flex;
-  flex-direction: column;
-
-  li {
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-
-  span {
-    margin-top: 10px;
-    padding-left: 30px;
-  }
-`
-
 const ProjectBox = styled.div`
   display: grid;
   grid-template-columns: 0.3fr 0.85fr;
@@ -217,10 +188,4 @@ const ProjectBox = styled.div`
   li {
     font-size: 1rem;
   }
-`
-
-const DivLine = styled.div`
-  margin: 50px 0;
-  height: 1px;
-  background-color: lightgray;
 `

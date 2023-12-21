@@ -1,45 +1,40 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Skill = () => {
+const Certification = () => {
   return (
     <>
-      <SkillTitleWrap>Skill</SkillTitleWrap>
-      <SkillBox>
+      <CertificationTitleWrap>Certification</CertificationTitleWrap>
+      <CertificationBox>
         <div>
-          <span>Front-End</span>
-          <li>HTML/CSS, JavaScript, React.js</li>
+          <span>AI-900</span>
+          <li>2023.11 - Microsoft</li>
         </div>
         <hr />
         <div>
-          <span>Back-End</span>
-          <li>Node.js, Flask</li>
+          <span>SQLD</span>
+          <li>2023.10 - 한국데이터산업진흥원</li>
         </div>
         <hr />
         <div>
-          <span>Database</span>
-          <li>MySQL, Oracle</li>
+          <span>MOS 2010</span>
+          <li>2016.07 - Microsoft</li>
         </div>
-        <hr />
-        <div>
-          <span>Tool</span>
-          <li>GitHub, Figma</li>
-        </div>
-      </SkillBox>
+      </CertificationBox>
     </>
   )
 }
 
-export default Skill
+export default Certification
 
-const SkillTitleWrap = styled.div`
+const CertificationTitleWrap = styled.div`
   border-left: green solid 10px;
   padding-left: 16px;
   font-size: 2.5rem;
   font-weight: bold;
 `
 
-const SkillBox = styled.div`
+const CertificationBox = styled.div`
   padding-left: 10px;
   margin-top: 20px;
   @media screen and (min-width: 1024px){
