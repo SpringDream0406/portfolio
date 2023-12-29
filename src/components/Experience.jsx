@@ -10,7 +10,7 @@ const Experience = () => {
       <ExBox>
 
         <Link to='/kekeke'>4. KEKEKE </Link>
-        <span className='pjExplain'>- AI 추천 및 드로잉 기술을 이용한 주문 케이크 플랫폼</span>
+        <span className='pjExplain'>- AI 추천 및 드로잉 기술을 이용한 주문 케이크 플랫폼 (광인사 2차 프로젝트)</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
           <span className='pjContent'>2023.11.09 ~ 2023.11.21</span>
@@ -97,8 +97,6 @@ const Experience = () => {
         <br />
 
         <Link to='/farmfarm'>1. 팜팜</Link>
-        {/* <a href='farmfarm'>1. 팜팜</a> */}
-        {/* <a href='https://hellosori.notion.site/4dd1ce5f2f684bf9adf2cb49d631c81b' target='_blank' rel='noopener noreferrer'>1. 팜팜</a> */}
 
         <span className='pjExplain'>- 도심농부를 위한 텃밭 분양 플랫폼 (광인사 1차 프로젝트)</span>
         <ProjectBox>
