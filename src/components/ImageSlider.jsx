@@ -13,7 +13,7 @@ const ImageSlider = ({ imageForderName, imageFiles }) => {
     centerMode: true,
     centerPadding: '0',
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 500,
   };
 
   const publicUrl = process.env.PUBLIC_URL;
