@@ -24,6 +24,7 @@ const Home = () => {
       <Experience />
       <DivLine />
       <Picture />
+      <br />
       <h2 className='tytext'>Thank you!</h2>
     </HomeField>
   )
@@ -35,7 +36,7 @@ const HomeField = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 55%;
   height: 100%;
   padding-top: 85px;
   padding-bottom: 85px;
