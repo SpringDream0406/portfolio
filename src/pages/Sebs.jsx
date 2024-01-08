@@ -19,7 +19,7 @@ const Sebs = () => {
     <PjExplainField>
       <ExBox>
 
-        <ImageSlider imageForderName={imageForderName} imageFiles={imageFiles}/>
+        <ImageSlider imageForderName={imageForderName} imageFiles={imageFiles} />
         <br />
         <br />
         <br />
@@ -52,7 +52,10 @@ const Sebs = () => {
         <hr />
         <Recall>
           <h4>회고</h4>
-          2차 프로젝트 중 친분 있는 팀이 서버에 대한 어려움을 겪고 있어서 여러 이유로 도움을 주게 되었습니다. <br />
+          개인적으로 아쉬움이 많이 남은 프로젝트였다. <br />
+          팀 합류를 제안할 때 팀장의 계획과 달리 팀원 모집에 차질이 있었고, 프로젝트를 진행하면서도 여러 번 문제가 발생했다. <br />
+          팀원과의 성향이 안 맞을 때를 경험해 볼 수 있었고, 되돌아보면서 한번씩 생각해 볼 수 있는 프로젝트였다. <br />
+
           <br />
 
         </Recall>
@@ -75,10 +78,15 @@ const Sebs = () => {
         <ProjectBox>
           <span className='pjTitle'>GitHub</span>
           <div className='pjContent'>
-            <a className='pjContent' href='https://github.com/SpringDream0406/-GAI-Appsolute' target='_blank' rel='noopener noreferrer'>https://github.com/SpringDream0406/-GAI-Appsolute</a>
+            <a className='pjContent' href='https://github.com/SpringDream0406/-GAI-Appsolute' target='_blank' rel='noopener noreferrer'>Seb's Music Github</a>
 
           </div>
         </ProjectBox>
+        <hr />
+
+        <br />
+        <button onClick={goBack}>뒤로 가기</button>
+
       </ExBox>
 
     </PjExplainField>)

@@ -25,7 +25,7 @@ const FarmFarm2 = () => {
 
         <Title href='#' onClick={goBack}>2. 팜팜 서버 교체</Title>
 
-        <span className='pjExplain'>- node 서버를 배운 후, 광인사 1차 프로젝트 였던 팜팜의 서버를 node로 교체</span>
+        <span className='pjExplain'>- Node 서버를 배운 후, 광인사 1차 프로젝트 였던 팜팜의 서버를 Flask에서 Node로 교체</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
           <span className='pjContent'>2023.10.27 ~ 2023.11.09</span>
@@ -66,9 +66,14 @@ const FarmFarm2 = () => {
         <ProjectBox>
           <span className='pjTitle'>GitHub</span>
           <div className='pjContent'>
-            <a className='pjContent' href='https://github.com/SpringDream0406/-GAI-project_Appian' target='_blank' rel='noopener noreferrer'>팜팜 프로젝트 GitHub</a>
+            <a className='pjContent' href='https://github.com/SpringDream0406/-GAI-project_Appian' target='_blank' rel='noopener noreferrer'>팜팜 GitHub</a>
           </div>
         </ProjectBox>
+        <hr />
+
+        <br />
+        <button onClick={goBack}>뒤로 가기</button>
+
       </ExBox>
 
     </PjExplainField>)

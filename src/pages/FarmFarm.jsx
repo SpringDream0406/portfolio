@@ -71,7 +71,7 @@ const FarmFarm = () => {
           <br />
           두 번째는 프로젝트 중 코로나에 걸렸던 점입니다. <br />
           코로나에 걸려서 일주일간 집에 격리되었고, 몸도 많이 안 좋았었는데, 프로젝트에서 중요한 역할인 서버와 DB를 담당하고 있었습니다. <br />
-          게다가 프론트와 서버의 데이터를 연동하는 단계였기 때문에, 학원에 노트북을 서버로 켜두고, 집에서 원격조정으로 관리하며, <br />
+          게다가 프론트와 API를 연동하는 단계였기 때문에, 학원에 노트북을 서버로 켜두고, 집에서 원격조정으로 관리하며, <br />
           요청에 맞춰 API를 만들어주고, 연동을 확인하는 등의 일을 하면서, 맡은 역할의 책임감을 느끼고, 이를 수행하기 위해 노력했습니다. <br />
           덕분에 같은 팀원분들에게 좋은 인상을 줄 수 있었고, 당시에는 몸이 아파 힘들었지만 역할을 제대로 수행하고 마무리할 수 있어 <br />
           뿌듯함을 느낄 수 있었습니다. <br />
@@ -110,16 +110,20 @@ const FarmFarm = () => {
             ></iframe>
           </div>
         </Recall>
-
         <hr />
 
         <ProjectBox>
           <span className='pjTitle'>GitHub</span>
           <div className='pjContent'>
-            <a className='pjContent' href='https://github.com/SpringDream0406/-GAI-project_Appian' target='_blank' rel='noopener noreferrer'>팜팜 프로젝트 GitHub</a>
+            <a className='pjContent' href='https://github.com/SpringDream0406/-GAI-project_Appian' target='_blank' rel='noopener noreferrer'>팜팜 GitHub</a>
           </div>
         </ProjectBox>
-      </ExBox>
+        <hr />
+
+        <br />
+        <button onClick={goBack}>뒤로 가기</button>      
+        
+        </ExBox>
 
     </PjExplainField>
   )

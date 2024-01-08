@@ -70,7 +70,7 @@ const Experience = () => {
         <br />
 
         <Link to='/farmfarm2'>2. 팜팜 서버 교체</Link>
-        <span className='pjExplain'>- node 서버를 배운 후, 광인사 1차 프로젝트 였던 팜팜의 서버를 node로 교체</span>
+        <span className='pjExplain'>- Node 서버를 배운 후, 광인사 1차 프로젝트 였던 팜팜의 서버를 Flask에서 Node로 교체</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
           <span className='pjContent'>2023.10.27 ~ 2023.11.09</span>
