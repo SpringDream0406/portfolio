@@ -24,7 +24,7 @@ const Kekeke = () => {
         <br />
         <br />
 
-        <Title href='#' onClick={goBack}>4. KEKEKE</Title>
+        <Title>4. KEKEKE</Title>
 
         <span className='pjExplain'>- AI 추천 및 드로잉 기술을 이용한 주문 케이크 플랫폼</span>
         <ProjectBox>
@@ -94,7 +94,7 @@ const Kekeke = () => {
         <ProjectBox>
           <span className='pjTitle'>GitHub</span>
           <div className='pjContent'>
-            <a className='pjContent' href='https://github.com/SpringDream0406/-GAI-project_Appian' target='_blank' rel='noopener noreferrer'>kekeke Github</a>
+            <a className='pjContent' href='https://github.com/SpringDream0406/-GAI-kekeke' target='_blank' rel='noopener noreferrer'>kekeke Github</a>
 
           </div>
         </ProjectBox>
@@ -113,18 +113,13 @@ export default Kekeke
 
 
 
-const Title = styled.a`
+const Title = styled.div`
   text-decoration: none;
   color: orange;
   font-weight: bold;
   font-size: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   transition: color 0.3s;
-
-  &:hover {
-    text-decoration: underline;
-    color: red;
-  }
 `;
 
 

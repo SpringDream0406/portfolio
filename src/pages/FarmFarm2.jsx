@@ -23,7 +23,7 @@ const FarmFarm2 = () => {
         <br />
         <br />
 
-        <Title href='#' onClick={goBack}>2. 팜팜 서버 교체</Title>
+        <Title>2. 팜팜 서버 교체</Title>
 
         <span className='pjExplain'>- Node 서버를 배운 후, 광인사 1차 프로젝트 였던 팜팜의 서버를 Flask에서 Node로 교체</span>
         <ProjectBox>
@@ -82,18 +82,13 @@ const FarmFarm2 = () => {
 export default FarmFarm2
 
 
-const Title = styled.a`
+const Title = styled.div`
   text-decoration: none;
   color: orange;
   font-weight: bold;
   font-size: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   transition: color 0.3s;
-
-  &:hover {
-    text-decoration: underline;
-    color: red;
-  }
 `;
 
 

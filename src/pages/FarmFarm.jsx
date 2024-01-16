@@ -26,7 +26,7 @@ const FarmFarm = () => {
         <br />
         <br />
 
-        <Title href='#' onClick={goBack}>1. 팜팜</Title>
+        <Title>1. 팜팜</Title>
 
         <span className='pjExplain'>- 도심농부를 위한 텃밭 분양 플랫폼 (광인사 1차 프로젝트)</span>
         <ProjectBox>
@@ -133,18 +133,13 @@ export default FarmFarm
 
 
 
-const Title = styled.a`
+const Title = styled.div`
   text-decoration: none;
   color: orange;
   font-weight: bold;
   font-size: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   transition: color 0.3s;
-
-  &:hover {
-    text-decoration: underline;
-    color: red;
-  }
 `;
 
 const Recall = styled.span`

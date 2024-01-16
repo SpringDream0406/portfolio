@@ -24,7 +24,7 @@ const Sebs = () => {
         <br />
         <br />
 
-        <Title href='#' onClick={goBack}>23. SEB'S MUSIC</Title>
+        <Title>23. SEB'S MUSIC</Title>
 
         <span className='pjExplain'>- AI기반 음악 추천 스트리밍 서비스 (광인사 2차 프로젝트)</span>
         <ProjectBox>
@@ -74,6 +74,7 @@ const Sebs = () => {
             ></iframe>
           </div>
         </Recall>
+        <hr />
 
         <ProjectBox>
           <span className='pjTitle'>GitHub</span>
@@ -95,18 +96,13 @@ const Sebs = () => {
 export default Sebs
 
 
-const Title = styled.a`
+const Title = styled.div`
   text-decoration: none;
   color: orange;
   font-weight: bold;
   font-size: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   transition: color 0.3s;
-
-  &:hover {
-    text-decoration: underline;
-    color: red;
-  }
 `;
 
 
