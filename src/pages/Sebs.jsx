@@ -29,7 +29,7 @@ const Sebs = () => {
         <span className='pjExplain'>- AI기반 음악 추천 스트리밍 서비스 (광인사 2차 프로젝트)</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
-          <span className='pjContent'>2023.11.09 ~ 2023.11.21</span>
+          <span className='pjContent'>2023.11.01 ~ 2023.12.05</span>
         </ProjectBox>
         <hr />
         <ProjectBox>
