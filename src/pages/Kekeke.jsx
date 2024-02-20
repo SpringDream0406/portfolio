@@ -24,7 +24,7 @@ const Kekeke = () => {
         <br />
         <br />
 
-        <Title>4. KEKEKE</Title>
+        <Title>3. KEKEKE</Title>
 
         <span className='pjExplain'>- AI 추천 및 드로잉 기술을 이용한 주문 케이크 플랫폼</span>
         <ProjectBox>

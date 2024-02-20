@@ -13,7 +13,7 @@ const Education = () => {
         <br />
         <li>조선대학교 전자공학과</li>
         <span>- 기간 : 2007.03 ~ 2013.02</span>
-        <span>- 학점 : 4.08 / 4.5</span>
+        <span>- 학점 : 4.09 / 4.5</span>
       </EduBox>
     </>
   )

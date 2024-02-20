@@ -9,7 +9,7 @@ const Experience = () => {
       <ExTitleWrap>Experience</ExTitleWrap>
       <ExBox>
 
-        <Link to='/kekeke'>4. KEKEKE </Link>
+        <Link to='/kekeke'>3. KEKEKE </Link>
         <span className='pjExplain'>- AI 추천 및 드로잉 기술을 이용한 주문 케이크 플랫폼 (광인사 2차 프로젝트)</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
@@ -40,34 +40,6 @@ const Experience = () => {
         <br />
         <br />
 
-        <Link to='/sebs'>3. SEB'S MUSIC</Link>
-        <span className='pjExplain'>- AI기반 음악 추천 스트리밍 서비스 (광인사 2차 프로젝트)</span>
-        <ProjectBox>
-          <span className='pjTitle'>프로젝트 기간</span>
-          <span className='pjContent'>2023.11.01 ~ 2023.12.05</span>
-        </ProjectBox>
-        <hr />
-        <ProjectBox>
-          <span className='pjTitle'>프로젝트 종류</span>
-          <span className='pjContent'>팀 프로젝트 (4명)</span>
-        </ProjectBox>
-        <hr />
-        <ProjectBox>
-          <span className='pjTitle'>사용 기술</span>
-          <span className='pjContent'>Flutter / Node.js / Flask / MySQL / Github</span>
-        </ProjectBox>
-        <hr />
-        <ProjectBox>
-          <span className='pjTitle'>담당 역할</span>
-          <div className='pjContent'>
-            <li>Node를 이용한 API 서버 개발/관리</li>
-            <li>MySQL을 이용한 데이터베이스 구축/관리</li>
-          </div>
-        </ProjectBox>
-
-        <br />
-        <br />
-        <br />
 
         <Link to='/farmfarm2'>2. 팜팜 서버 교체</Link>
         <span className='pjExplain'>- Node 서버를 배운 후, 광인사 1차 프로젝트 였던 팜팜의 서버를 Flask에서 Node로 교체</span>
