@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3d6e388a.css",
-    "main.js": "/portfolio/static/js/main.0b0d1c05.js",
+    "main.js": "/portfolio/static/js/main.d29312af.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/05-1-1. 도희 회식 4컷.png": "/portfolio/static/media/05-1-1. 도희 회식 4컷.06cd2ee3f755e2939ba6.png",
     "static/media/05-1-2. 도희 회식 4컷.png": "/portfolio/static/media/05-1-2. 도희 회식 4컷.61536c0cd387fd668436.png",
@@ -69,11 +69,11 @@
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
     "main.3d6e388a.css.map": "/portfolio/static/css/main.3d6e388a.css.map",
-    "main.0b0d1c05.js.map": "/portfolio/static/js/main.0b0d1c05.js.map",
+    "main.d29312af.js.map": "/portfolio/static/js/main.d29312af.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3d6e388a.css",
-    "static/js/main.0b0d1c05.js"
+    "static/js/main.d29312af.js"
   ]
 }
