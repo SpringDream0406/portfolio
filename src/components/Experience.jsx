@@ -106,16 +106,16 @@ const ExBox = styled.div`
   }
 `;
 
-const ProjectBox = styled.div`
-  display: grid;
-  grid-template-columns: 0.3fr 0.85fr;
-  margin: 15px 0;
+// const ProjectBox = styled.div`
+//   display: grid;
+//   grid-template-columns: 0.3fr 0.85fr;
+//   margin: 15px 0;
 
-  .pjTitle {
-    font-weight: bold;
-  }
+//   .pjTitle {
+//     font-weight: bold;
+//   }
 
-  .pjContent {
-    margin-left: 25px;
-  }
-`;
+//   .pjContent {
+//     margin-left: 25px;
+//   }
+// `;
